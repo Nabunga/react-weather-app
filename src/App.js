@@ -14,6 +14,12 @@ function kelvinToCelsius(temp) {
   return temp;
 }
 
+function mileToKilometer(windspeed) {
+  windspeed = windspeed * 1.60934;
+  windspeed = windspeed.toFixed(2);
+  return windspeed;
+}
+
 class WeatherDisplay extends Component {
   constructor() {
     super();
@@ -76,7 +82,7 @@ class WeatherDisplay extends Component {
             <mark>{kelvinToCelsius(weatherData.main.temp_max)}°</mark>
           </li>
           <li className="list-group-item">
-            Wind speed is <mark>{weatherData.wind.speed} mi/hr</mark>.
+            Wind speed is <mark>{mileToKilometer(weatherData.wind.speed)} km/hr</mark>.
           </li>
         </ul>
       </React.Fragment>
@@ -95,8 +101,6 @@ class App extends Component {
   render() {
     const { activePlace } = this.state;
     return (
-      
-        
         <div className="container">
           <div className="row mt-3">
             <div className="col align-self-center">
@@ -132,7 +136,6 @@ class App extends Component {
             </div>
           </div>
         </div>
-      
     );
   }
 }
