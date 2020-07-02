@@ -1,0 +1,26 @@
+.body {
+  background-color: black;
+}
+
+.back {
+  background: url(https://images.unsplash.com/photo-1534794048419-48e110dca88e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2148&q=80) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+}
+
+.card {
+  box-shadow: 0 0 50px -10px;
+}
+
+h5 {
+  font-family: 'Nunito', sans-serif;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+}
